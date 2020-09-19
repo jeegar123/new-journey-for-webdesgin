@@ -18,4 +18,12 @@ $num2=2;
         // echo "i=$i and j=$j   c=$c\n";
     }
 
+    // error operator
+
+
+    $file= @file('function_in_php.t') or 
+        die('sorry file not found'.$php_errormsg);
+    
+
+
 ?>
