@@ -13,4 +13,11 @@
     $author="Jeegar Vinodkumar";
     echo "Legend Never dies :".$author;
 
+    //  constant in php
+
+    // case senstive last parameter default false means no case senstive
+    define('NAME',"Legend",true);
+
+    echo "\nconstant:".NAME;
+
 ?>
