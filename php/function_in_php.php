@@ -14,6 +14,13 @@
     };
 
     echo $myfunc();
+
+// arrow functions 
+
+   $t= fn($x,$y) => $x + $y;
+   echo "\n".$t(1,2); 
+
+
 ?>
 <?php
 function paridrom_number($num){

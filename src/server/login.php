@@ -1,3 +1,5 @@
+<!-- !!!!!!!!!!!!!Note!!!!!!!! -->
+<!-- using securing in login i skip this file -->
 <?php
 // in get data in url is visble
 // data fetch using get method

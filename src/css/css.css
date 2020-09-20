@@ -2,3 +2,38 @@
    text-align: center;
 }
 
+h1{
+   text-align: center;
+   background-color: blue;
+   color: aliceblue;
+}
+
+.input_field{
+   height: 30px;
+   width: 50%;
+}
+
+form{
+   margin-top: 10%;
+}
+
+
+label{
+   font-size: large;
+}
+
+#btn{
+   margin-top: 20px;
+   width: 100px;
+   height: 50px;
+}
+
+.success{
+   background: green;
+   color: aliceblue;
+}
+
+.danger{
+   color: aliceblue;
+   background-color: red;
+}
