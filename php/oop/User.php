@@ -6,16 +6,24 @@ class User
     private $username;
     private $password;
 
-
+    public static $security_code = "123@sss";
     // constructor
-    public function __construct( $username="",$password="")
+    public function __construct($username = "", $password = "")
     {
-                echo "Constructor is invoked\n";
-                $this->username = $username;
-                $this->password=$password;
-
+        echo "Constructor is invoked\n";
+        $this->username = $username;
+        $this->password = $password;
     }
 
+    public function getSecurityCode()
+    {
+        return User::$security_code;
+    }
+
+    public static  function setSecurityCode($newcode)
+    {
+        User::$security_code= $newcode;
+    }
 
 
     function checkUser()
@@ -32,7 +40,8 @@ class User
 }
 
 
-class foo {
+class foo
+{
     public $bar = <<<EOT
 bar
 EOT;

@@ -1,30 +1,31 @@
 <?php
 
-    require 'User.php';
+declare(strict_types=1);   // implcit casting not work
+require 'User.php';
 
-    $user =new User("admin@gmail.com","admin123");
+$user = new User("admin@gmail.com", "admin123");
 
-    echo $user->checkUser()?"valid user":"not valid";
-    echo"\n";
+echo $user->checkUser() ? "valid user" : "not valid";
+echo "\n";
 
-    // invoke static method
-    // echo $user::checkuser();
-   
-    //  to delete object
-    unset($user);
-    // echo $user->checkuser()?"valid user":"not valid";
-    // echo"\n";
+// invoke static method
+// echo $user::checkuser();
 
-    $foo =new foo;
-    echo $foo->bar;
+//  to delete object
+unset($user);
+// echo $user->checkuser()?"valid user":"not valid";
+// echo"\n";
 
-    $n="india";
-    //  in single quote data can't be parsed and interpret
-    echo 'my country is $n'; 
-    echo "my country is $n";
+$foo = new foo;
+echo $foo->bar;
+
+$n = "india";
+//  in single quote data can't be parsed and interpret
+echo 'my country is $n';
+echo "my country is $n";
 
 
-    // heroDOc and myDOc
+// heroDOc and myDOc
 echo "\n";
 // heredoc similar ""
 echo <<< DOT
