@@ -7,25 +7,41 @@ interface Sandwich
 
 class ColdSandwich implements Sandwich
 {
-    public function getDetails(){
-            return 'Tuna' ;
-    } 
+    public function getDetails()
+    {
+        return 'Tuna';
+    }
 }
 
 class HotSandwich implements Sandwich
 {
-    public function getDetails(){
-        return 'panni' ;
-    } 
+    public function getDetails()
+    {
+        return 'panni';
+    }
 }
 
-class FrozenSandwich implements Sandwich
+abstract class FrozenSandwich implements Sandwich
 {
-    public function getDetails(){
-        return "ice-cream" ;
-    } 
+    public function getDetails()
+    {
+        return "ice-cream";
+    }
+    abstract  public function myType();
+}
+
+class IceCreamBread  extends FrozenSandwich
+{
+
+    public function myType()
+    {
+        return 'ice';
+    }
 }
 
 
-$s=new FrozenSandwich();
- echo $s->getDetails();
+
+$sandwitch = new FrozenSandwich();
+echo $sandwitch->getDetails();
+
+$iceCream=new IceCreamBread();
