@@ -1,0 +1,23 @@
+body{
+    
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+.flex-parent{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.flex-children{
+    width: 100px;
+    height: 100px;
+    background-color: #444CF7;
+}

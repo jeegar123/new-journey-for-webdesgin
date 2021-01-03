@@ -1,0 +1,27 @@
+.userinput {
+  width: 90%;
+  margin-top: 20px;
+  height: 40px;
+  font-size: larger;
+}
+
+body {
+ 
+}
+
+.userinput:hover {
+  border: 2px solid green;
+  background-color: beige;
+}
+
+button {
+  text-align: center;
+  width: 80px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 40%;
+  height: 40px;
+  background-color: blue;
+  border: 1px solid wheat;
+  
+}

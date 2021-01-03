@@ -1,0 +1,41 @@
+nav {
+  height: 80px;
+  background-color: blue;
+  margin: -16px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  color: antiquewhite;
+  position: relative;
+  font-size: large;
+  padding: 0px 15px;
+}
+
+label #btn,
+label #cancle{
+color: white;
+font-size: 30px;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+
+#check{display: none;}
+
+
+
+@media (max-width:955px){
+   
+    label #btn{
+        display: block;
+    }
+    nav {
+        top:20px;
+        width: 130px;
+    }
+}
