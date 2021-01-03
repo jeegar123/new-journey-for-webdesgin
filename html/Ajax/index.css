@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+
+input{
+
+    margin-top: 20px;
+    width: 50%;
+    height: 30px;
+    font-size: 20px;
+}
+button{
+    height: 30px;
+    font-size: 20px;
+}
+
+#records{
+    text-align: center;
+    table-layout: auto;
+
+}
+
+td{
+    border: 2px solid red;
+}
